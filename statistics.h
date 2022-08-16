@@ -1,0 +1,8 @@
+//
+// Created by jrste on 15/08/2022.
+//
+
+#ifndef CPP_JOURNEY_STATISTICS_H
+#define CPP_JOURNEY_STATISTICS_H
+
+#endif //CPP_JOURNEY_STATISTICS_H
