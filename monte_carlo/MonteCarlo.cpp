@@ -20,10 +20,9 @@ MonteCarlo::MonteCarlo(float _x, float _y) {
         return 0;
     }
 }
-
+std::default_random_engine generator;
+std::discrete_distribution<int> distribution {1, 2};
 [[maybe_unused]] int MonteCarlo::coinSimulation(int state){
-    std::default_random_engine generator;
-    std::discrete_distribution<int> distribution {1, 2};
     int randomState;
     randomState = distribution(generator);
     if (randomState == state){

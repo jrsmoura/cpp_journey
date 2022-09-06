@@ -1,27 +1,21 @@
 #include <iostream>
-#include <random>
+#include <string>
+#include <utility>
+#include "cow/cow.h"
 #include "monte_carlo/MonteCarlo.h"
 
 int main() {
-    int n_runs = 100;
+    MonteCarlo mc(0, 0);
+
+    int nRuns = 100;
     int count = 0;
-    float x = .0;
-    float y = .0;
-    MonteCarlo mc(x, y);
+    float prob = .0;
+    int state = 2;
 
-    for(int i = 0; i < n_runs; i++) {
-        count += mc.coinSimulation(2);
-        std::cout << (float) count << std::endl;
+    for(int i = 0; i < nRuns; i++) {
+        count  += MonteCarlo::coinSimulation(state);
     }
-    std::cout << (float) count / n_runs << std::endl;
+    std::cout << count << std::endl;
 
-
-    std::default_random_engine generator;
-    std::discrete_distribution<int> distribution {1, 2};
-    for(int i = 0 ; i < 10; i++) {
-        int randomState;
-        randomState = distribution(generator);
-        std::cout << "Testing:  " << randomState << std::endl;
-    }
     return 0;
 }

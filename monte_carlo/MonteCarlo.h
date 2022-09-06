@@ -10,8 +10,8 @@ class MonteCarlo {
 public:
     MonteCarlo(float _x, float _y);
 
-    [[maybe_unused]] int piSimulation(float x, float y);
-    [[maybe_unused]] int coinSimulation(int state);
+    [[maybe_unused]] static int piSimulation(float x, float y);
+    [[maybe_unused]] static int coinSimulation(int state);
 };
 
 
