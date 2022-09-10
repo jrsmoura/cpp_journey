@@ -10,4 +10,5 @@ include_directories(${MLPACK_INCLUDE_DIR} C:/cpp_libs/mlpack)
 add_executable(cpp_journey main.cpp statistics.h
         cow/cow.cpp cow/cow.h
         monte_carlo/MonteCarlo.cpp monte_carlo/MonteCarlo.h
-        tree/tree.cpp tree/tree.h)
+        tree/tree.cpp tree/tree.h
+        simple_epidemiology/Epidemiology.cpp simple_epidemiology/Epidemiology.h)
