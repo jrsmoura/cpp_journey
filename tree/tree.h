@@ -6,7 +6,7 @@
 #define CPP_JOURNEY_TREE_H
 
 
-class tree {
+class Tree {
 
 private:
     int data;

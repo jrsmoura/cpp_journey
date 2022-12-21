@@ -7,8 +7,11 @@ include_directories(${BOOST_INCLUDE_DIR} C:/cpp_libs/boost)
 include_directories(${TENSORFLOW_C_INCLUDE_DIR} C:/cpp_libs/tensorflow-c)
 include_directories(${MLPACK_INCLUDE_DIR} C:/cpp_libs/mlpack)
 
-add_executable(cpp_journey main.cpp statistics.h
+add_executable(
+        cpp_journey main.cpp statistics.h
         cow/cow.cpp cow/cow.h
         monte_carlo/MonteCarlo.cpp monte_carlo/MonteCarlo.h
         tree/tree.cpp tree/tree.h
-        simple_epidemiology/Epidemiology.cpp simple_epidemiology/Epidemiology.h)
+        simple_epidemiology/Epidemiology.cpp simple_epidemiology/Epidemiology.h
+        linked_list/linkedLists.cpp linked_list/linkedLists.h
+        tree/Node.cpp tree/Node.h jogo_da_forca/jogo_da_forca.cpp jogo_da_forca/jogo_da_forca.h)

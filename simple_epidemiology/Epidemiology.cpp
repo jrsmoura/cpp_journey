@@ -10,6 +10,7 @@ int Epidemiology::setNumPersons(int x, int y) {
 
 int* Epidemiology::buildGrid(int x, int y) {
     int grid[x][y];
+    float randomTest;
     for(int i = 0; i < x; i++) {
         for(int j = 0; j < y; j++) {
             randomTest = (float) rand() / RAND_MAX;
@@ -22,7 +23,7 @@ int* Epidemiology::buildGrid(int x, int y) {
         }
     }
 
-    return grid;
+    return 0;
 }
 
 Epidemiology::Epidemiology(int _x, int _y) {

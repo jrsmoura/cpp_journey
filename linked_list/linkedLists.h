@@ -1,0 +1,9 @@
+//
+// Created by jrste on 15/09/2022.
+//
+
+#ifndef CPP_JOURNEY_LINKEDLISTS_H
+#define CPP_JOURNEY_LINKEDLISTS_H
+
+
+#endif //CPP_JOURNEY_LINKEDLISTS_H
